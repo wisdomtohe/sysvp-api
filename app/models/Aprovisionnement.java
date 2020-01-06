@@ -73,7 +73,7 @@ public class Aprovisionnement extends BaseModel {
         Query<Aprovisionnement> reqAprovisionnement = Ebean.find(Aprovisionnement.class);
         reqAprovisionnement.setRawSql(rawSql).setParameter("agentId", id_agent);
                 if(id_boutique != null){
-                    reqAprovisionnement.setParameter("boutiqueId", id_boutique)
+                    reqAprovisionnement.setParameter("boutiqueId", id_boutique);
                 }
                 if (debut != null && fin != null) {
                 reqAprovisionnement.setParameter("debut", debut)
