@@ -3,3 +3,7 @@ GET     /categories         controllers.CategorieController.getAllCatgorie()
 GET     /categories/:idc    controllers.CategorieController.getById(idc: Long)
 POST    /categories/new     controllers.CategorieController.createCateg()
 POST    /aprovisionnements/by_agent     controllers.CategorieController.listeProduits()
+
+
+POST    /users/create       controllers.UserController.createUser()
+POST    /users/login       controllers.UserController.login()
